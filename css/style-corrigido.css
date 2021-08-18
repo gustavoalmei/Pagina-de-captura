@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    width: 1000px;
+    margin: auto;
+    background-color:black;
+}
+
+header .container{
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 1000px;
+    margin: auto;
+}
+
+.container h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.principal{
+    background-image: url("../images/people.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.box{
+    max-width: 250px;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding: 20px;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+select{
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="submit"]{
+    background-color: #48C5CE;
+    color: white;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.photo{
+    width: 160px;
+}
+
+.text-description{
+    max-width: 40%;
+    display: inline-block;
+    color: white;
+    text-align: left;
+}
+
+.text-description p, .text-description h3{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+@media screen and (min-width:720px) {
+    html{
+        max-width: 100vw;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    html{
+        max-width: 100vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    header .container{
+        max-width: 100vw;
+        margin: 0;
+    }
+    
+    .principal{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .box{
+        float: none;
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    footer{
+        text-align: left;
+        max-width: 100vh;
+    }
+
+    .text-description{
+        clear: both;
+        float: none;
+        width: 100vw;
+    }
+
+    .description{
+    max-width: 100vw;
+    width: 500px;
+    }
+}
